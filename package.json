@@ -1,0 +1,13 @@
+{
+  "name": "quote-builder",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "seed": "npm run seed --prefix backend",
+    "dev": "concurrently -n backend,frontend -c blue,magenta \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "test": "npm test --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
